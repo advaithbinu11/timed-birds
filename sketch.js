@@ -95,7 +95,7 @@ function keyPressed(){
     }
 }
 async function getBackground(){
-    var response=await fetch("https://worldclockapi.com/api/json/cst/now");
+    var response=await fetch("http://worldclockapi.com/api/json/cst/now");
     var responseJSON=await response.json()
     var dateTime=responseJSON.currentDateTime
     console.log(dateTime);
